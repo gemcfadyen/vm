@@ -5,7 +5,7 @@
 .vagrant
 Vagrantfile
 boxes/
-cookbooks/custom/
+#cookbooks/custom/
 cookbooks/default/git/files/default/.gitconfig
 crash.log
 iso/
