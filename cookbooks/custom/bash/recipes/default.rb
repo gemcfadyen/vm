@@ -1,3 +1,10 @@
+bash_dir = Helper.home('.bashscripts')
+
+directory bash_dir do
+  owner Helper.user
+  group Helper.group
+end
+
 cookbook_file Helper.home('fancy_prompt.sh') do
   owner Helper.user
   group Helper.group
