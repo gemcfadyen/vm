@@ -34,3 +34,19 @@ cookbook_file Helper.home('.tmux.conf') do
   owner Helper.user
   group Helper.group
 end
+
+resurrect_dir = Helper.home('clone/path')
+
+directory resurrect_dir do
+ owner Helper.user
+ group Helper.group
+ recursive true
+end
+
+git resurrect_dir do
+  user Helper.user
+  group Helper.group
+  repository 'https://github.com/tmux-plugins/tmux-resurrect'
+  reference 'master'
+  action :sync
+end
