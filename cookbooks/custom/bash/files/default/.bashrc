@@ -16,7 +16,7 @@ function export_ssh_auth_sock() {
 
 FILES=$HOME/.bashscripts/*.bash
 # Load other config files and maintain SSH_AUTH_SOCK
-if [ -z "$TMUX" ]; then
+if [ "$TERM" = "screen" ] && [ -n "$TMUX" ]; then
   symlink_ssh_auth_sock
 else
   for config_file in $FILES
