@@ -42,7 +42,7 @@ bash 'install leiningen' do
   code "#{lein_bin} self-install"
 end
 
-cookbook_file Helper.home('.bashscripts/leiningen.bashscript') do
+cookbook_file Helper.home('.bashscripts/leiningen.bash') do
   owner Helper.user
   group Helper.group
 end
