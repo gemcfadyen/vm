@@ -31,7 +31,7 @@ bash 'restart postgres with new user and permissions' do
   code 'sudo /etc/init.d/postgresql restart'
 end
 
-cookbook_file Helper.home('.bashscripts/postgresql.bashscript') do
+cookbook_file Helper.home('.bashscripts/postgresql.bash') do
   owner Helper.user
   group Helper.group
 end
