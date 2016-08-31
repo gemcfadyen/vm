@@ -24,6 +24,8 @@ Plugin 'Yggdroot/indentLine'
 Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'vim-scripts/paredit.vim'
 Plugin 'elixir-lang/vim-elixir'
+Plugin 'vim-scripts/php.vim'
+Plugin 'wdalmut/vim-phpunit'
 
 "All of your Plugins must be added before the following line
 call vundle#end()            " required
