@@ -1,5 +1,4 @@
 vundle_dir = Helper.home('.vim/bundle/Vundle.vim')
-#vundle_dir = Helper.home('.vim')
 colors_dir = Helper.home('.vim/colors')
 
 apt_package 'vim-nox'

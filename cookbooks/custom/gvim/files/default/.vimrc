@@ -26,6 +26,7 @@ Plugin 'vim-scripts/paredit.vim'
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'vim-scripts/php.vim'
 Plugin 'wdalmut/vim-phpunit'
+Plugin 'fatih/vim-go'
 
 "All of your Plugins must be added before the following line
 call vundle#end()            " required

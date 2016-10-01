@@ -4,6 +4,13 @@ golang_tar           = Helper.home('golang.tar.gz')
 golang_home          = Helper.home('.golang')
 golang_unpacked_path = Helper.home('go')
 go                   = "#{Helper.home('.bin')}/go"
+go_project_dir       = Helper.home('/home/vagrant/Documents/GoProjects')
+
+directory go_project_dir do
+  owner Helper.user
+  group Helper.group
+  recursive true
+end
 
 remote_file golang_tar do
   owner Helper.user
