@@ -28,3 +28,8 @@ else
   symlink_ssh_auth_sock
 fi
 
+#Print divider under each command
+PROMPT_COMMAND=printDivider
+function printDivider() {
+    printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -;
+  }
