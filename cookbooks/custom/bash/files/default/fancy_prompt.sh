@@ -52,7 +52,7 @@ function _fancy_prompt {
 
   # Final $ symbol
   PROMPT=$PROMPT"$BLUE\$$WHITE "
-
+  printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -;
   export PS1=$PROMPT
 }
 
