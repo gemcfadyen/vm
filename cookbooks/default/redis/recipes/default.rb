@@ -1,4 +1,4 @@
-redis_package       = 'redis-2.8.8'
+redis_package       = 'redis-3.2.5'
 redis_url           = "http://download.redis.io/releases/#{redis_package}.tar.gz"
 redis_tar           = Helper.home('redis.tar.gz')
 redis_home          = Helper.home('.redis')
